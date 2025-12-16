@@ -1,3 +1,11 @@
+
+import google.generativeai as genai
+
+API_KEY = "AIzaSyDjC7bGJzEvrbSpSY7xujBIcRqzwF8nFKg"
+
+genai.configure(api_key=API_KEY)
+
+
 """
 Inkly - Serviço de integração com Google Gemini
 """
@@ -130,4 +138,5 @@ Seja criativo e divertido no feedback! Não explique, apenas retorne o JSON."""
         }
         
         import random
+
         return random.choice(feedbacks.get(emotion, feedbacks["thinking"]))
