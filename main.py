@@ -1,8 +1,3 @@
-import google.generativeai as genai
-
-genai.configure(
-    api_key="AIzaSyDjC7bGJzEvrbSpSY7xujBIcRqzwF8nFKg"
-)
 """
 Inkly - Backend FastAPI
 Servidor principal da aplicação
@@ -257,3 +252,4 @@ if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
